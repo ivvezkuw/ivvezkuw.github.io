@@ -29,7 +29,7 @@
                 return false;
             }
             }
-            
+
             </script>
             <style>
                 .shadowtext{
@@ -38,6 +38,10 @@
                     font-size: 2em;
                 }
             </style>
+            <script>
+            window.onload = function(){
+                setInterval(clockPainting, 1000);}
+            </script>
         </head>
         <body background="images/bg.jpg">
             <table border="1" align="center" cellspacing="10">
@@ -45,6 +49,7 @@
                     <td background="images/bg-3.jpg" colspan="2" height="150" align="right" hspace="5">
                         <font size="5" color="Maroon">
                         <h1 class ="shadowtext">Сайт web-студiї "Web-DECO"</h1></font></td>
+                        <script src="js/clock1.js"></script>
                 </tr>
                 <tr>
                     <td colspan="2">
@@ -60,6 +65,8 @@
                 </tr>
                 <tr>
                     <td width="30%" valign="top">
+                        <center><canvas id="canvas" height="120" width ="120"></canvas></center>
+                        <hr>
                         <font size="5" color="navy"><h2>Новини</h2></font>
                             <font size="5">
                                 <ul>
